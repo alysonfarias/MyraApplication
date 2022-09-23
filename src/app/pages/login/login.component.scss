@@ -1,0 +1,37 @@
+
+
+
+aside {
+    background-color: black;
+    width: 35%;
+    height: 100vh;
+}
+
+main {
+    width: 65%;
+    height: 100vh;
+    background-image: url(../.././../assets/images/background-login.jpg);
+    background-size: cover;
+}
+
+
+.main-text {
+    color: white;
+    margin-top: 40%;
+    margin-left: 30%;
+    font-size: 48px;
+}
+
+.card {
+    height: 50vh;
+    width: 360px;
+    margin-top: 20%;
+    margin-left: 10%;
+    background-color: rgb(197, 196, 196);
+    border-radius: 15px;
+}
+
+.minimal-log {
+    width: 60px;
+    height: 60px;
+}
