@@ -9,12 +9,21 @@
         </h1>
     </aside>
     <main class="d-flex">
-        <div class="card d-flex flex-column align-content-center">
+        <div  class="card d-flex flex-column align-content-center">
             <img class="minimal-log" src="../../../assets/images/minimal-logo.png" alt="Myra Minimal Logo" srcset="">
-            <input type="text">
-            <input type="text">
-
-            <button class="btn btn-primary">Entrar</button>
+            <div [formGroup]="form" class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-regular fa-user"></i>
+                </span>
+                <input formControlName="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-lock"></i>
+                </span>
+                <input formControlName="password" type="password" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            <button class="btn btn-primary" (click)="loginAsync()">Entrar</button>
             <small>Esqueci minha senha</small>
         </div>
     </main>
