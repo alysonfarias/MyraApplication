@@ -14,19 +14,19 @@ export class LoginComponent implements OnInit {
 
   form!: FormGroup;
   authUser!: AuthUser;
-  
+
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
     private router: Router
-  ) { 
+  ) {
     this.form = this.formBuilder.group({
       username: [null],
       password: [null]
     })
   }
   ngOnInit(): void {
-    
+
   }
 
 
@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
     {
       this.form.markAllAsTouched();
     }
-    
+
     console.log(isValid)
     return isValid;
   }
